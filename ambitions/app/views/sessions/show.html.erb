@@ -1,0 +1,9 @@
+<h2>homepage</h2>
+<form class="" action="<%= users_url %>" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+  <% if logged_in? %>
+    <label for="username">Username</label>
+  <% end %>
+
+</form>
